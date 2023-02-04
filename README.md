@@ -6,9 +6,9 @@ Sloppy, poorly planned app that has english/chinese translations of the CA Cosme
 -npm install
 -maybe a firebase install type thing
 
-#run locally
+# run locally
 -ng serve
 
-#update and deploy
+# update and deploy
 -ng build
 -firebase deploy
