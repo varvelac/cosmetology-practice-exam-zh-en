@@ -1,0 +1,14 @@
+  /* Use a modern font for the text */
+  ion-item, ion-label, ion-textarea {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Add a bold color for the button */
+  ion-button {
+    --ion-color-primary: #222222;
+  }
+
+  /* Use a subtle gradient for the text areas */
+  ion-textarea {
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  }

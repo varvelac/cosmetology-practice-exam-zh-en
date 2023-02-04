@@ -1,0 +1,108 @@
+[{
+  "label": "10-06-22 Chemistry and Electricity(1-50)",
+  "name": "100622quiz",
+  "description": "General Knowledge Quiz from 10-06-022",
+  "enString" : "en100622",
+  "cnString": "cn100622"
+},
+  {
+    "label": "10-07-22 Hairstyling(1-42)",
+    "name": "100722quiz",
+    "description": "General Knowledge Quiz from 10-07-022",
+    "enString" : "en100722",
+    "cnString": "cn100722"
+  },
+  {
+    "label": "10-09-22 Hairstyling(43-96)",
+    "name": "100922quiz",
+    "description": "General Knowledge Quiz from 10-09-022",
+    "enString" : "en100922",
+    "cnString": "cn100922"
+  },
+  {
+    "label": "10-12-22 Haircoloring(1-50)",
+    "name": "101222quiz",
+    "description": "General Knowledge Quiz from 10-12-022",
+    "enString" : "en101222",
+    "cnString": "cn101222"
+  },
+  {
+    "label": "10-14-22 Haircoloring(51-91)",
+    "name": "101422quiz",
+    "description": "General Knowledge Quiz from 10-14-022",
+    "enString" : "en101422",
+    "cnString": "cn101422"
+  },
+  {
+    "label": "10-14-22 Draping(1-10)",
+    "name": "101422quiz",
+    "description": "General Knowledge Quiz from 10-14-022",
+    "enString" : "end101422",
+    "cnString": "cnd101422"
+  },
+  {
+    "label": "10-14-22 Shampooing and Conditioner(1-25)",
+    "name": "101422quiz",
+    "description": "General Knowledge Quiz from 10-14-022",
+    "enString" : "enf101422",
+    "cnString": "cnf101422"
+  },
+  {
+    "label": "10-19-22 Color(69-100)",
+    "name": "101922quiz",
+    "description": "General Knowledge Quiz from 10-19-022",
+    "enString" : "end101922",
+    "cnString": "cnd101922"
+  },
+  {
+    "label": "10-20-22 Facials(1-24)",
+    "name": "102022quiz",
+    "description": "General Knowledge Quiz from 10-20-022",
+    "enString" : "en102022",
+    "cnString": "cn102022"
+  },
+  {
+    "label": "10-20-22 Chemical perm(1-31)",
+    "name": "102022quiz",
+    "description": "General Knowledge Quiz from 10-20-022",
+    "enString" : "end102022",
+    "cnString": "cnd102022"
+  },
+  {
+    "label": "10-23-22 Decontamination and infection control(1-24)",
+    "name": "102322quiz",
+    "description": "General Knowledge Quiz from 10-23-022",
+    "enString" : "en102322",
+    "cnString": "cn102322"
+  },
+  {
+    "label": "10-25-22 Wet Hairstyling(1-35)",
+    "name": "102522quiz",
+    "description": "General Knowledge Quiz from 10-25-022",
+    "enString" : "en102522",
+    "cnString": "cn102522"
+  },  {
+    "label": "10-26-22 Wet Hairstyling(1-34)",
+    "name": "102622quiz",
+    "description": "General Knowledge Quiz from 10-26-022",
+    "enString" : "end102622",
+    "cnString": "cnd102622"
+  },
+  {
+    "label": "10-31-22 Histology of the skin(1-44)",
+    "name": "103122quiz",
+    "description": "General Knowledge Quiz from 10-31-022",
+    "enString" : "en103122",
+    "cnString": "cn103122"
+  }, {
+    "label": "10-31-22 Histology of the skin(45-80)",
+    "name": "103122quiz",
+    "description": "General Knowledge Quiz from 10-31-022",
+    "enString" : "end103122",
+    "cnString": "cnd103122"
+  }
+
+
+
+
+]

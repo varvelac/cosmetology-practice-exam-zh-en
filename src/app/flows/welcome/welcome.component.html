@@ -1,0 +1,87 @@
+
+
+
+
+
+
+<div class="question-container">
+  <h4 align="center">Cosmetology Exam</h4>
+
+  <!-- <h5 align="center">Choose a section for practice exam</h5>
+  <div style="margin-top: 20px">
+  </div> -->
+
+  <div *ngIf="showError">
+
+    <h3 style=color:red;>
+      Incorrect Password
+    </h3>
+  </div>
+
+<div *ngIf="authorized">
+  
+ 
+
+  <ion-accordion-group>
+    <ion-accordion *ngFor="let quizList of collection; let i=index;" value="{{i}}" style="background-color:#fff;">
+      <ion-item slot="header" color="light" style="background-color:#fff;">
+        <ion-label>{{quizList.name}}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <div style="margin-top: 5px">
+          <ion-list>
+            <ion-content style="height:500px;">
+            <ion-infinite-scroll
+              position="center"
+              style="background-color:#fff;"
+            >
+              <ion-infinite-scroll-content style="background-color:#fff;">
+                <div *ngFor="let quiz of quizList.value">
+                  <ion-item
+                    (click)="selectQuiz(quiz)"
+                    style="margin-bottom: 20px; margin-top: 20px"
+                  >
+                    <ion-icon name="log-out-outline" style="color: black"></ion-icon>
+                    <ion-label style="margin-left: 16px; color: black">{{
+                      quiz.label
+                    }}</ion-label>
+                  </ion-item>
+                </div>
+                <div style="height:250px;"></div>
+              </ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+          </ion-content>
+          </ion-list>
+        </div>
+      
+      </div>
+    </ion-accordion>
+
+  </ion-accordion-group>
+  <ion-button style="position:relative; left:5%; top:25px;" (click)="random()">Random 110</ion-button>
+  <ion-button style="position:relative; left:5%; top:25px;" (click)="vocab()">Vocab Game</ion-button>
+
+</div>
+
+<div *ngIf="!authorized">
+
+<ion-input placeholder="Enter Password" [(ngModel)]="password" style="border: 1px solid black;"></ion-input>
+
+
+<ion-fab style="position:fixed;bottom:50px;left:42%;" (click)="submit();">
+  <ion-fab-button size="medium" color="medium">
+    <ion-icon name="caret-forward-circle-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+

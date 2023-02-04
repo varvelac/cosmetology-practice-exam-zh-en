@@ -1,0 +1,24 @@
+<div class="question-container">
+  <div *ngIf="quiz && !questions" class="spinner-grow text primary">
+  </div>
+  <div *ngIf="questions" class="quiz">
+    <h4 align="center" style="margin: 0px;" *ngIf="!showResults">{{route.snapshot.params.quizId | uppercase}} Section Practice Exam</h4>
+    <h6 style="margin-top: 5px; font-weight:bold;" *ngIf="!showResults" >{{currentQuestionIndex + 1}} of {{questions.length}}  <span style="float:right">{{time}}</span></h6>
+    <div *ngIf="!showResults" class="questions" style="overflow-y:auto;">
+      <app-question-form [question]="questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
+      </app-question-form>
+     
+        <ion-fab vertical="bottom" style="margin-bottom:50px;" horizontal="center" slot="fixed">
+          <ion-fab-button size="medium" color="medium" (click)="nextOrViewResults()"
+          [disabled]="!answers.values[currentQuestionIndex]">
+            <ion-icon md="caret-forward" ios="chevron-forward-circle-outline"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+        
+  
+
+    </div>
+    <app-results style="position:relative; z-index:105" *ngIf="showResults" [answers]="answers" [questions]="questions"></app-results>
+  </div>
+
+</div>

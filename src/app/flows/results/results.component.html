@@ -1,0 +1,54 @@
+<div class="results">
+  <h5 class="md-display-1" align="center">
+    {{ answers.values.length - incorrectAnswers.length }} out of
+    {{ answers.values.length }} correct
+  </h5>
+  <h5 align="center">
+    Your Score:
+    {{
+      (answers.values.length - incorrectAnswers.length) / answers.values.length
+        | percent
+    }}
+  </h5>
+  <ion-button size="small" color="medium" (click)="showChinese = !showChinese"
+    >中文</ion-button
+  >
+  <ion-content style="height: 500px">
+    <ion-infinite-scroll
+      threshold="50%"
+      position="center"
+      style="background-color: #fff"
+    >
+      <ion-infinite-scroll-content>
+        <div *ngFor="let a of answers.values; let i = index">
+          <div class="results-container" *ngIf="a.correct == false">
+            <div class="answer" [ngClass]="{ correct: a.correct }">
+              <div>
+                <p *ngIf="!showChinese" class="question-repeat">
+                  {{ i + 1 }}. {{ questions[i].label }}
+                </p>
+                <p *ngIf="showChinese" class="question-repeat">
+                  {{ i + 1 }}. {{ questions[i].chineseLabel }}
+                </p>
+                <p class="your-answer">Your answer --- {{ a.value }}</p>
+                <p *ngIf="!showChinese" class="wrong-right">
+                  Correct answer--- {{ a.correctAnswer.value }}
+                </p>
+                <p *ngIf="showChinese" class="wrong-right">
+                  Correct answer--- {{ a.correctAnswer.valueCH }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+  <a routerLink="/">
+    <ion-fab style="position: fixed; bottom: 50px; left: 42%">
+      <ion-fab-button size="medium" color="medium">
+        <ion-icon name="sync-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </a>
+</div>

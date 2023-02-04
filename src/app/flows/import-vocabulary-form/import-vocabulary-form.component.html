@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-weight: bold; text-align: center">
+      Import List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <div style="display: flex; flex-direction: row">
+  <ion-textarea
+    style="border: 1px solid black; margin-right: 10px"
+    [(ngModel)]="englishList"
+  ></ion-textarea>
+  <ion-textarea
+    style="border: 1px solid black"
+    [(ngModel)]="chineseList"
+  ></ion-textarea>
+</div>
+<div style="display: flex; justify-content: center; margin-top: 50px">
+  <ion-button (click)="createVocabArray()">Create Vocabulary Array</ion-button>
+</div>
+<p style="margin-top: 50px">{{ vocabArray }}</p> -->
+
+<div style="display: flex; flex-direction: row; width:80%; margin-left:10%;">
+  <textarea
+    style="border: 1px solid black; margin-right: 10px; height:300px; width:500px;"
+    [(ngModel)]="englishList" placeholder="English"
+  ></textarea>
+  <textarea
+    style="border: 1px solid black; margin-right: 10px; height:300px; width:500px;"
+    [(ngModel)]="chineseList" placeholder="Chinese"
+  ></textarea>
+  <textarea
+  style="border: 1px solid black; height:300px; width:500px;"
+  [(ngModel)]="pinyinList" placeholder="Pinyin"
+></textarea>
+</div>
+<div style="display: flex; justify-content: center; margin-bottom: 100px">
+  <ion-button (click)="createVocabArray()">Generate vocabulary list</ion-button>
+</div>
+<p *ngIf="vocabArray" style="margin-bottom: 50px">{{vocabArray | json }}</p>
+
+<p *ngIf="loading" style="margin-top: 50px">Loading...</p>
+<p *ngIf="error" style="margin-top: 50px; color: red">Error: {{ error }}</p>

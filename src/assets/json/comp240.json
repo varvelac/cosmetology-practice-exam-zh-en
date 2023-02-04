@@ -1,0 +1,42 @@
+[{
+  "label": "(1-60) Comprehensive",
+  "name": "240",
+  "description": "General Knowledge Quiz from 11-15-022",
+  "enString" : "ena240",
+  "cnString": "cna240"
+}, {
+  "label": " (61-120) Comprehensive",
+  "name": "240",
+  "description": "General Knowledge Quiz from 11-15-022",
+  "enString" : "enb240",
+  "cnString": "cnb240"
+},
+{
+  "label": "(121-180) Comprehensive",
+  "name": "240",
+  "description": "General Knowledge Quiz from 11-15-022",
+  "enString" : "enc240",
+  "cnString": "cnc240"
+},
+{
+  "label": "(181-240) Comprehensive",
+  "name": "240",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : "end240",
+  "cnString": "cnd240"
+},
+{
+  "label": "(241-275) Comprehensive",
+  "name": "240",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : "ene240",
+  "cnString": "cne240"
+},
+{
+  "label": "Random 110",
+  "name": "240",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : ["ena240","enb240","enc240","end240","ene240"],
+  "cnString": ["cna240","cnb240","cnc240","cnd240","cne240"],
+  "random":true
+}]

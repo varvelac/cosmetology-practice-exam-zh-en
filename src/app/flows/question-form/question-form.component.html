@@ -1,0 +1,32 @@
+<div class="quiz" *ngIf="question">
+  <ion-button size="small" color="medium" (click)="showChinese = !showChinese">中文</ion-button>
+  <h6 class="md-display-2">{{question.label}}</h6>
+  <br>
+  <div>
+    <h6 *ngIf="showChinese" class="chinese-label"> {{question.chineseLabel}}</h6>
+  </div>
+  
+  
+  <div class="question-form-container">
+    <div>
+      <form [formGroup]="form">
+        <div class="form-group">
+          <label *ngFor="let choice of question.choices;">
+            <li *ngIf="choice.value">
+              <span class="choice-container">
+                <input type="radio" [value]="choice" formControlName="choice">
+                <span>{{choice.value}}</span> 
+              </span>
+              <span class="chinese-label" style="margin-left:20px;" *ngIf="showChinese">{{choice.valueCH}}</span>
+            </li>
+
+          </label>
+        </div>
+      </form>
+
+    </div>
+
+
+  </div>
+
+</div>

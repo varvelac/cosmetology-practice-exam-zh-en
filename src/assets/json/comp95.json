@@ -1,0 +1,21 @@
+[{
+  "label": "(1-50) Comprehensive",
+  "name": "95",
+  "description": "General Knowledge Quiz from 11-19-022",
+  "enString" : "ena95",
+  "cnString": "cna95"
+}, {
+  "label": " (51-95) Comprehensive",
+  "name": "95",
+  "description": "General Knowledge Quiz from 11-19-022",
+  "enString" : "enb95",
+  "cnString": "cnb95"
+},
+{
+  "label": "Random 95",
+  "name": "111122quiz",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : ["ena95", "enb95"],
+  "cnString": ["cna95", "cnb95"],
+  "random":true
+}]

@@ -1,0 +1,48 @@
+[{
+  "label": "(1-50) Comprehensive",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-15-022",
+  "enString" : "ena300",
+  "cnString": "cna300"
+}, {
+  "label": " (51-100) Comprehensive",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-15-022",
+  "enString" : "enb300",
+  "cnString": "cnb300"
+},
+{
+  "label": "(100-150) Comprehensive",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-15-022",
+  "enString" : "enc300",
+  "cnString": "cnc300"
+},
+{
+  "label": "(151-200) Comprehensive",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : "end300",
+  "cnString": "cnd300"
+}, {
+  "label": " (201-250) Comprehensive",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : "ene300",
+  "cnString": "cne300"
+},
+{
+  "label": "(251-300) Comprehensive",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : "enf300",
+  "cnString": "cnf300"
+},
+{
+  "label": "Random 110",
+  "name": "300",
+  "description": "General Knowledge Quiz from 11-16-022",
+  "enString" : ["ena300","enb300","enc300","end300","ene300", "enf300"],
+  "cnString": ["cna300","cnb300","cnc300","cnd300","cne300", "cnf300"],
+  "random":true
+}]

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-weight:bold; text-align: center;">
+      English-Chinese Flashcards - Score: {{ score }}
+        
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <h2 style="margin-left:20px;">English</h2>
+        <ion-card *ngFor="let word of englishWords" (click)="selectEnglish(word); speak(word.word)" [ngClass]="{'selected-card': word.word == selectedEnglish,'incorrect': word.word == selectedEnglish  && mismatch }" [ngStyle]="{'animation': word.word == selectedEnglish && mismatch ? 'wiggle 0.2s linear infinite' : 'none'}" style="border: 1px solid black; box-shadow: 2px 2px 2px gray;">
+          <ion-card-content>
+            <ion-card-title style="font-weight: bold;font-size:14px">{{ word.word }}</ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <h2 style="margin-left:20px;">Chinese</h2>
+        <ion-card *ngFor="let word of chineseWords;let i=index;" (click)="selectChinese(word)" [ngClass]="{'selected-card': word.word == selectedChinese,'incorrect': word.word == selectedChinese  && mismatch }" [ngStyle]="{'animation': word.word == selectedEnglish && mismatch ? 'wiggle 0.2s linear infinite' : 'none'}" style="border: 1px solid black; box-shadow: 2px 2px 2px gray;">
+          <ion-card-content>
+            <ion-card-title style="font-weight: bold; font-size:14px">{{ word.word }} - {{ pinyinWords[word.id].word }}</ion-card-title>
+          
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+</ion-content>
+
+<style>
+  .selected-card {
+    border-color: green;
+  }
+</style>
